@@ -46,6 +46,7 @@ def yield_sam(file, paired=False):
                 yield [[line1, split1],[l, split]] # yield data
                 l=fhs.readline().strip()
 
+
 def soft_adj(cigar, pos):
     match=soft_re.match(cigar)
     if match==None:
